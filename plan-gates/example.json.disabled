@@ -1,0 +1,14 @@
+{
+  "name": "example-phase1",
+  "active": true,
+  "plan_title": "Phase 1: example feature",
+  "checkout_root": "/absolute/path/to/your/repo-or-worktree",
+  "plan_path": "/absolute/path/to/your/repo-or-worktree/PLAN.md",
+  "key_file": "/absolute/path/to/a/.env/containing/TYPESAFE_API_KEY",
+  "model": "jev-1.13.0",
+  "decision_skip_sections": ["Background"],
+  "gates": [
+    { "id": "g1", "title": "Schema changes", "work": "Migrations and generated types", "approved": false },
+    { "id": "g2", "title": "API layer", "work": "Route handlers and validation", "approved": false }
+  ]
+}
